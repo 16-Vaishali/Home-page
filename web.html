@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pizza Planet</title>
+	<!--links for icon and font -->
 	<script src="https://kit.fontawesome.com/50a8cc3a65.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200&family=Lexend+Giga&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,10 +21,123 @@
 					<li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
 			</ul>
 		</div>
-		<div id="mobile">
-			<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-			<i id="bar" class="fas fa-outdent"></i>
+		<section id="hero">
+		<h4>On Fire &#128293</h4>
+		<h2>Mega Offer!!</h2>
+		<h3>Limited Stocks</h3>
+		<p>Diwali special coupons up to 85% off</p>
+		<button>Visit here</button>
+	</section>
+	<section id="feature" class="section-p1">
+		<div class="fbox">
+			<img src="/images/yummy.jpg">
+			<h6>Yummy food</h6>
+		</div>
+		<div class="fbox">
+			<img src="/images/delivery.png">
+			<h6>Fast delivery</h6>
+		</div>
+		<div class="fbox">
+			<img src="/images/surprise.jpg">
+			<h6>Surprise gifts</h6>
+		</div>
+		<div class="fbox">
+			<img src="/images/bulk.jpg">
+			<h6>Bulk orders</h6>
+		</div>
+		<div class="fbox">
+			<img src="/images/cust.jpg">
+			<h6>24/7 service</h6>
 		</div>
 	</section>
+	</section>
     </body>
+	<style>
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lexend Giga';
+}
+h1{
+	font-size: 55px;
+	line-height: 65px;
+	color: #222;
+}
+h2{
+	font-size: 45px;
+	line-height: 53px;
+	color: #222;
+}
+h3{
+	font-size: 20px;
+	line-height: 51px;
+	color: #222;
+}
+h4{
+	font-size: 15px;
+	color: #222;
+}
+h6{
+	font-weight: 700;
+	color: #465b52;
+	margin: 15px 0 20px 0;
+}
+		#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background-color: white;
+	box-shadow: 0 5px 15px rgb(0, 0, 0,0.06);
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#navbar li{
+list-style: none;
+padding: 0 20px;
+position: relative;
+}
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 650;
+	color: steelblue;
+	transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+	color: #33261d ;	
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background-color: #334E58;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+	text-underline-position: 0;
+}
+		#hero{
+    background-image: url("/images/pizback.jpg");
+    height: 90vh;
+    width: 100%;
+	background-size: cover;
+	background-position: top 25% right 0;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+	</style>
     </html>
