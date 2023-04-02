@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pizza Planet</title>
-	<!--links for icon and font -->
+	<!--links for font and icons-->
 	<script src="https://kit.fontawesome.com/50a8cc3a65.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200&family=Lexend+Giga&display=swap" rel="stylesheet">
 </head>
@@ -19,9 +19,9 @@
 					<li><a href="about.html">About Us &#128151</li>
 					<li><a href="contact.html">Contact us</li>
 					<li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-			</ul>
-		</div>
-		<section id="hero">
+					
+	</section>
+	<section id="hero">
 		<h4>On Fire &#128293</h4>
 		<h2>Mega Offer!!</h2>
 		<h3>Limited Stocks</h3>
@@ -49,7 +49,6 @@
 			<img src="/images/cust.jpg">
 			<h6>24/7 service</h6>
 		</div>
-	</section>
 	</section>
 	<section id="product1" class="section-p1">
 	<h2>Our Special Pizzas</h2>
@@ -516,9 +515,78 @@
 		</div>
 	</div>
 </section>
-    </body>
-	<style>
-		*{
+<section id="banner-2" class="section-p1">
+	<div class="ban-box">
+		<h4>Here comes...</h4>
+		<h2>Cozy<br>Combo!</h2>
+		<span>Only from us</span>
+		<button class="white">Click here</button>
+	</div>
+	<div class="ban-box ban-box2">
+		<h4>Come Fast And Grab</h4>
+		<h2>Yummy Burgers</h2>
+		<span>With Your Fav Dish</span>
+		<button class="white">Click here</button>
+	</div>
+<section id="newsletter" class="section-p1 section-m1">
+	<div class="newstext">
+		<h4>SignUp Here</h4>
+		<p>Get Updates through Email</p>
+	</div>
+	<div class="form">
+		<input type="text" placeholder="Enter your mail-id">
+		<button class="normal">Sign Up</button>
+	</div>
+</section>
+<footer class="section-p1">
+<div class="col">
+	<img class="logo" src="C:\Users\LENOVO\Downloads\pizzaplanet.png" height="100px">
+	<h4>Contact</h4>
+	<p><strong>Address:</strong>14/16 Akjv Street, Goa</p>
+	<p><strong>Phone:</strong>9123456789</p>
+	<p><strong>Working hours:</strong>10am-9pm</p>
+	<div class="follow">
+		<h4>Follow us</h4>
+		<div class="icon">
+		</div>
+	</div>
+</div>
+<div class="col">
+	<h4>About</h4>
+	<a href="#">Who are we</a>
+	<a href="#">Jobs</a>
+	<a href="#">Privacy policy</a>
+	<a href="#">Terms and conditions</a>
+	<a href="#">Contact us</a>
+</div>
+<div class="col">
+		<h4>My Account</h4>
+	<a href="#">Sign in</a>
+	<a href="#">Cart</a>
+	<a href="#">Favourites</a>
+	<a href="#">Where is my order</a>
+	<a href="#">Help</a>
+</div>
+<div class="col install">
+	<h4>Get our app</h4>
+	<p>From PlayStore and AppStore</p>
+	<div class="row">
+		<img src="images/playstore.png" height="90px" width="100px" alt="PlayStore">
+		<img src="images/appstore.png" height="100px" width="100px" alt="AppStore">
+	</div>
+		<p>Make payments with</p>
+		<div class="row">
+		<img src="images/payment.png" height="80px" width="150px" alt="paymentMethods">
+	</div>
+</div>
+<div class="copyright">
+	<p>Made by Vaishali-2023</p>
+</div>
+</footer>
+<script type="script.js"></script>
+</body>
+<style>
+	*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -548,7 +616,41 @@ h6{
 	color: #465b52;
 	margin: 15px 0 20px 0;
 }
-		#header{
+
+.section-p1{
+	padding: 40px 80px;
+}
+.section-m1{
+	margin: 40px 0;
+}
+button.normal{
+font-size: 14px;
+font-weight: 600;
+padding: 14px 30px;
+color: #000;
+background-color: #fff;
+border-radius: 4px;
+cursor: pointer;
+border: none;
+outline: none;
+transition: 0.2s;
+}
+button.white{
+font-size: 13px;
+font-weight: 600;
+padding: 11px 18px;
+color: blanchedalmond;
+background-color: transparent;
+cursor: pointer;
+border: 1px solid white;
+outline: none;
+transition: 0.2s;
+}
+
+body{
+	width: 100%;
+}
+#header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -592,7 +694,14 @@ position: relative;
 	left: 20px;
 	text-underline-position: 0;
 }
-		#hero{
+#mobile{
+	display: none;
+	align-items: center;
+}
+#close{
+	display: none;
+}
+#hero{
     background-image: url("/images/pizback.jpg");
     height: 90vh;
     width: 100%;
@@ -604,7 +713,7 @@ position: relative;
 	align-items: flex-start;
 	justify-content: center;
 }
-		#hero h4{
+#hero h4{
 	padding-bottom: 15px;
 }
 #hero h3{
@@ -729,5 +838,170 @@ margin: 15px 0;
 	bottom: 20px;
     right: 10px;
 }
-	</style>
-    </html>
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/ban.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+	color: #fff2e5;
+	font-size: 16px;
+}
+#banner h2{
+	color: #fff2e5;
+	font-size: 30px;
+	padding: 10px 0;
+}
+#banner h2 span{
+	color: slateblue;
+}
+#banner button:hover{
+	background-color: #ef3636;
+	color: #fff;
+}
+#banner-2{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#banner-2 .ban-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-image: url("images/banner1.jpg");
+	min-width: 580px;
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+	padding: 30px;
+}
+#banner-2 .ban-box2{
+	background-image: url("images/banner2.jpg");
+}
+#banner-2 h4{
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+}
+#banner-2 h2{
+	color: white;
+	font-size: 28px;
+	font-weight: 800;
+}
+}
+#banner-2 span{
+	font-size: 15px;
+	font-weight: 500;
+	padding-bottom: 15px;
+}
+#banner-2 .ban-box:hover button{
+	background-color: purple;
+	border: 1px solid #088178;
+}
+#aaa{
+	text-align: center;
+	padding-bottom: 20px;
+}
+#newsletter{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: 20% 30%;
+	background-color: #041e42;
+}
+#newsletter h4{
+	font-size: 22px;
+	font-weight: 750;
+	color: white;
+}
+#newsletter p{
+	font-size: 15px;
+	font-weight: 600;
+	color: #818ea0;
+}
+#newsletter .form{
+	display: flex;
+	width: 40%;
+}
+#newsletter input{
+	height: 3.125rem;
+	padding: 0 1.25em;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	outline: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+#newsletter button{
+	background-color: #088178;
+	color: white;
+	white-space: normal;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer .col{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+footer .logo{
+	margin-bottom: 30px;
+}
+footer h4{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+footer p{
+	font-size: 13px;
+	margin: 0 0 0;
+}
+footer a{
+	font-size: 13px;
+	text-decoration: none;
+	color: #222;
+	margin-bottom: 10px;
+}
+footer .follow{
+	margin-bottom: 20px;
+}
+footer .fol i{
+	color: black;
+	padding-right: 4px;
+	cursor: pointer;
+}
+footer .install .row{
+	border: 1px solid #088178;
+    border-radius: 6px;
+}
+footer .install img{
+	margin: 10px 0 15px 0;
+}
+footer .follow i:hover
+footer a:hover{
+	color: #088178;
+}
+footer .copyright{
+	width: 100%;
+	text-align: center;
+</style>
+</html>
+		
+	
